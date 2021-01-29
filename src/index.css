@@ -1,13 +1,54 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+	'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+	sans-serif;
+	-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.canvas-wrap{
+	display: flex;
+	justify-content: center;
+	background-color: aquamarine;
+	padding: 15px 0;
+}
+canvas{
+	background-color: white;
+	border: 1px solid #6dd0af;
+}
+.setting-wrap{
+	padding: 15px;
+	border-bottom: 1px solid #6dd0af;
+}
+.setting-wrap label:hover{
+	opacity: .7;
+}
+.setting-wrap label:not(:last-child){
+	margin-right: 15px;
+}
+label > input{
+	margin-left: 15px;
+}
+.tools{
+	padding: 15px;
+	border-bottom: 1px solid #6dd0af;
+}
+.tools button{
+	padding: 10px;
+	border-radius: 10px;
+	border: none;
+	cursor: pointer;
+	background-color:  #6dd0af;
+}
+.tools button:hover{
+	opacity: .7;
+}
+.tools button:not(:last-child){
+	margin-right: 15px;
 }
