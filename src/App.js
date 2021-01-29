@@ -1,13 +1,16 @@
 import Canvas from "./components/Canvas";
 import Setting from "./components/Setting";
 import Tools from "./components/Tools";
+import { SettingState } from "./state/SettingState";
 
 function App() {
     return (
         <>
-            <Tools/>
-            <Setting/>
-            <Canvas/>
+            <SettingState>
+                <Tools/>
+                <Setting/>
+                <Canvas/>
+            </SettingState>
         </>
     );
 }
