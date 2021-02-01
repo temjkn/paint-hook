@@ -5,6 +5,7 @@ import { SettingReducer, TOOL,
 
 export const SettingState = ({children}) => {
     const initialState = {
+        // canvas : canvas,
         ahead : [],
         back : [],
         currentTool : 'brush',
@@ -33,6 +34,8 @@ export const SettingState = ({children}) => {
             changeFillColor,
             changeStrokeColor,
             changeLineWeight,
+            // setCanvas,
+            // canvas : canvas,
             currentTool : state.currentTool,
             fillColor : state.fillColor,
             strokeColor : state.strokeColor,
